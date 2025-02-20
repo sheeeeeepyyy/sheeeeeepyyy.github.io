@@ -2,33 +2,112 @@
 <html lang="zh">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KR</title>
+    <title>❤️❤️征婚启事❤️❤️</title>
     <style>
         body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
             margin: 0;
-            background-color: #f0f0f0;
+            padding: 15px;
+            background-color: #FF69B4;
+            background-image: linear-gradient(45deg, #FFB6C1 25%, transparent 25%),
+                            linear-gradient(-45deg, #FFB6C1 25%, transparent 25%),
+                            linear-gradient(45deg, transparent 75%, #FFB6C1 75%),
+                            linear-gradient(-45deg, transparent 75%, #FFB6C1 75%);
+            background-size: 20px 20px;
+            font-family: "华文琥珀", "Arial Black";
         }
-        .red-box {
-            width: 900px;
-            height: 300px;
-            background-color: red;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 158px;
-            color: white;
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .title {
             text-align: center;
+            font-size: 48px;
+            color: yellow;
+            text-shadow: 3px 3px 0 red,
+                         -3px -3px 0 red,
+                         3px -3px 0 red,
+                         -3px 3px 0 red;
+            animation: blink 1s infinite;
+            margin: 20px 0;
+        }
+
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        .description {
+            background-color: #fff;
+            border: 5px solid gold;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px 0;
+            font-size: 24px;
+            color: #FF0000;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+
+        .media-container {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        /* 统一的媒体样式 */
+        .media {
+            max-width: 100%;
+            max-height: 80vh; 
+            height: auto;
+            margin-bottom: 20px;
+            border: 10px solid #FF1493;
+            box-sizing: border-box;
+            object-fit: contain;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        marquee {
+            background-color: yellow;
+            color: red;
+            font-size: 24px;
+            padding: 10px;
         }
     </style>
 </head>
-
 <body>
-    <div class="red-box">KR是傻逼</div>
-</body>
+    <div class="container">
 
+        <marquee>💘💘💘 有缘人快来看看吧！💘💘💘</marquee>
+        
+        <div class="title">💕诚心诚意寻找另一半💕</div>
+
+        <div class="description">
+            本人胡凯睿，今年18岁，身高158cm，体重75kg<br>
+            年薪500万+，有一套四合院两套北京一环有宝马m8奥迪rs7奔驰s680<br>
+            希望找一个暴力S的女生<br>
+            坐标：宁波<br>
+            微信：XXXXXXXX<br>
+            诚心求偶，非诚勿扰！
+        </div>
+
+        <div class="media-container">
+            <img class="media" src="1.webp" alt="个人照片1">
+            <img class="media" src="2.webp" alt="个人照片2">
+            <img class="media" src="3.webp" alt="个人照片3">
+            <img class="media" src="4.webp" alt="个人照片4">
+            
+            <video class="media" controls>
+                <source src="5.mp4" type="video/mp4">
+                您的浏览器不支持视频标签
+            </video>
+        </div>
+
+        <marquee direction="right">💝💝💝 期待与你相遇 💝💝💝</marquee>
+    </div>
+    <script type="text/javascript" id="myhk" src="https://myhkw.cn/api/player/174006411747" key="174006411747" m="1"></script>
+</body>
 </html>
